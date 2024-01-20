@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
+  
+  <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  
+      <!-- Font Awesome CSS from CDN -->
+      <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+          integrity="sha512-...YOUR-SHA-HERE..." crossorigin="anonymous" />
+  
+      <!-- Bootstrap Icons CSS from CDN -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.18.0/font/bootstrap-icons.css" rel="stylesheet">
+  
+      <!-- Bootstrap Local CSS from CDN -->
+      <!-- Custom CSS -->
+      <link href="style.css" rel="stylesheet">
+      <script src="script.js"></script>
+      <title>Compliance Project</title>
+  </head>
+
+  
+  <body>
+    <nav class="navbar navbar-dark bg-dark w-100">
+        <form class="form-inline d-flex justify-content-between align-items-center w-100">
+            <!-- Left Side -->
+            <div class="d-flex align-items-center">
+                <div class="gmail-logo ml-5">
+                    <img src="https://i.ibb.co/MkSzbnK/Gmail-logo-icon.png" alt="Gmail Logo">
+                </div>
+                <span class="navbar1-text ml-2 mr-5">compilancedesk@gmail.com</span>
+
+                <div class="ph-icon-container ml-5">
+                    <div class="phone-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                </div>
+                <span class="navbar1-text">+91 1234-6798-3412</span>
+            </div>
+
+            <!-- Right Side -->
+            <div class="d-flex align-items-center">
+                <button class="btn consult-button mr-2" type="button">Consult an Expert</button>
+
+                <div class="notification-icon ml-5 mr-2">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge">1</span>
+                </div>
+            </div>
+        </form>
+    </nav>
+  
+    <nav class="navbar navbar-light bg-light w-100">
+      <form class="form-inline d-flex justify-content-between align-items-center w-100">
+          <!-- Left Side with "c" Logo -->
+          <div class="d-flex align-items-center">
+              <img class="c-img ml-3" src="https://i.ibb.co/ct67NsM/clogo.png" alt="C Logo">
+          </div>
+  
+          <!-- Right Side with Menu Items, Login Button, and Toggle Button -->
+          <div class="d-flex align-items-center">
+              <span class="navbar-text">Accounts and Audit</span>
+              <span class="navbar-text ml-2">Payroll Management</span>
+              <span class="navbar-text ml-2">Licence & Registration</span>
+              <span class="navbar-text ml-2">Tax</span>
+              <span class="navbar-text ml-2">ROC</span>
+              <span class="navbar-text ml-2">Virtual CFO</span>
+              <button class="btn login-btn ml-2" type="button">LOGIN</button>
+              <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" 
+                  aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+          </div>
+      </form>
+  </nav>
+  
+  <div class="main-container text-center mt-5 d-flex flex-column align-items-center position-relative">
+    <div class="d-flex align-items-center w-100">
+        <img class="c-heading-img" src="https://i.ibb.co/ct67NsM/clogo.png" alt="C Logo">
+        <h2 class="compilance-title">ompliance at Convenience</h2>
+    </div>
+    <h6 class="text-center mb-3">Take control of your business,<br>leave the numbers to Compliance Desk India.</h6>
+    <h2 class="text-center mt-5">Search Smarter, Not Harder</h2>
+</div>
+    
+    <div class="container container1 text-center">
+        <div class="search-container">
+        <input type="text" class="search-bar" placeholder="Try ‘FSAAI Registration’">
+        <span><i class="fas fa-search search-icon"></i></span>
+    </div>
+        <div class="registration-buttons-container">
+          <button class="registration-button" onclick="highlightCard(this)" id="registration-btn1">GST Registration</button>
+          <button class="registration-button" onclick="highlightCard(this)" id="registration-btn2">Company Registration</button>
+          <button class="registration-button" onclick="highlightCard(this)" id="registration-btn3">Private Limited Comp</button>
+          <button class="registration-button" onclick="highlightCard(this)" id="registration-btn4">Trademark And IP</button>
+          <button class="registration-button" onclick="highlightCard(this)" id="registration-btn5">Company Registration</button>
+          <button class="registration-button" onclick="highlightCard(this)" id="registration-btn6">Company Registration</button>
+          <button class="registration-button" onclick="highlightCard(this)" id="registration-btn7">Company Registration</button>
+        </div>
+      </div>   
+      
+      <div class="container container2">
+        <h1 class="text-center" >Seamless Services, Seamless Success!</h1>
+        <div class="d-flex flex-column">    
+            <div class="d-flex flex-wrap justify-content-around mt-4">
+                <!-- First Row -->
+                <div class="service-card mb-4">
+                  <div class="service-card-body" id="service-card1">
+                    <img class="service-card-img" src="https://i.ibb.co/Mc0pgkk/service-1.png" alt="Virtual CFO Image">
+                    
+                        <h2 class="service-card-title">Virtual CFO</h2>
+                        <p class="card-text">Financial guidance without presence.</p>
+                  </div>
+                </div>
+                <div class="service-card mb-4" >
+                  <div class="service-card-body" id="service-card2">
+                    <img class="service-card-img" src="https://i.ibb.co/jvLzTgm/service-2.png" alt="Consult an Expert Image">
+                        <h2 class="service-card-title">Consult an Expert</h2>
+                        <p class="card-text">Speak to an expert in every field.</p>
+                    </div>
+                </div>
+                <div class="service-card mb-4">
+                  <div class="service-card-body" id="service-card3">
+                    <img class="service-card-img" src="https://i.ibb.co/G29bxyD/service-3.png" alt="Tax & Compliance Image">
+                    
+                        <h2 class="service-card-title">Tax & Compliance</h2>
+                        <p class="card-text">Efficient tax management solutions.</p>
+                    </div>
+                </div>
+                <!-- Second Row -->
+                <div class="service-card mb-4">
+                  <div class="service-card-body" id="service-card4">
+                    <img class="service-card-img" src="https://i.ibb.co/qDYktp1/service-4.png" alt="Documentation Image">
+                    
+                        <h2 class="service-card-title">Documentation</h2>
+                        <p class="card-text">Precise documentation, clear communication.</p>
+                    </div>
+                </div>
+                <div class="service-card mb-4">
+                  <div class="service-card-body" id="service-card5">
+                    <img class="service-card-img" src="https://i.ibb.co/KVPdvvK/service-5.png" alt="Trademark & IP Image">
+                    
+                        <h2 class="service-card-title">Trademark & IP</h2>
+                        <p class="card-text">Safeguarding innovation through legal protection.</p>
+                    </div>
+                </div>
+                <div class="service-card mb-4">
+                  <div class="service-card-body" id="service-card6">
+                    <img class="service-card-img" src="https://i.ibb.co/q5rq0Bn/service-6.png" alt="Business Setup Image">
+                    
+                        <h2 class="service-card-title">Business Setup</h2>
+                        <p class="card-text">Turning dreams into profitable reality.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container container3"> 
+      <div class="row">
+          <!-- First Container -->
+          <div class="col-md-5">
+              <div class="container3-1 d-flex align-items-center flex-column">
+               <div class="card-group">
+                <div class="card  compliance-desk-card active" id="card1">
+                  <img class="compliance-desk-logo"src="https://i.ibb.co/ct67NsM/clogo.png" alt="Card 1 Image 1">
+                  <img src="https://i.ibb.co/26Tz79C/compilance-desk-img.png" alt="Card 1 Image 2">
+              </div>
+          
+              <!-- Card 2 content (same as Card 1 for this example) -->
+              <div class="card compliance-desk-card active" id="card2">
+                <img class="compliance-desk-logo" src="https://i.ibb.co/ct67NsM/clogo.png" alt="Card 2 Image 1">
+                <img src="https://i.ibb.co/26Tz79C/compilance-desk-img.png" alt="Card 2 Image 2">
+              </div>
+
+              <div class="card compliance-desk-card active" id="card3">
+                <img class="compliance-desk-logo" src="https://i.ibb.co/ct67NsM/clogo.pngg" alt="Card 2 Image 1">
+                <img src="https://i.ibb.co/26Tz79C/compilance-desk-img.png" alt="Card 2 Image 2">
+            </div>
+
+            <div class=" card compliance-desk-card active" id="card4">
+              <img class="compliance-desk-logo" src="https://i.ibb.co/ct67NsM/clogo.png" alt="Card 2 Image 1">
+              <img src="https://i.ibb.co/26Tz79C/compilance-desk-img.png" alt="Card 2 Image 2">
+          </div>
+        </div>
+                  <div class="round-buttons mt-4">
+                    <button class="round-button" onclick="navigateToCard(1)"></button>
+                    <button class="round-button" onclick="navigateToCard(2)"></button>
+                    <button class="round-button" onclick="navigateToCard(3)"></button>
+                    <button class="round-button" onclick="navigateToCard(4)"></button>
+                </div>
+              </div>
+          </div>
+          <!-- Second Container -->
+          <div class="col-md-7">
+              <div class="d-flex">
+                  <img class="facts-myths-img"  src="https://i.ibb.co/3vS6KDK/factsandmyths.png"/>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <div class="container container4">
+      <h1 class="text-center">How we work?</h1>
+      <div class="d-flex  flex-column mb-5">
+      <div class="d-flex flex-wrap justify-content-around mt-4 ">
+          <!-- First Row -->
+          <img class="how-we-arr-img mt-5" src="https://i.ibb.co/myGXkzM/how-we-arr.png">
+          <div class="how-we-card">  
+              <div class="card-body text-center">
+                <img class="card-img-top" src="https://i.ibb.co/YDfmzwZ/how-1.png" alt="Understand Image">
+                  <h2 class="card-title">2. Understand</h2>
+                  <p class="card-text">Comprehend and mutually grasp the meaning</p>
+              </div>
+          </div>
+          <img class="how-we-arr-img mt-5" src="https://i.ibb.co/gdmWmf0/how-we-arr1.png">
+          <div class="how-we-card">       
+              <div class="card-body text-center">
+                <img class="card-img-top" src="https://i.ibb.co/xs6Xbh8/how-2.png" alt="Complete Image">
+                  <h2 class="card-title">4. Complete</h2>
+                  <p class="card-text">Collaboratively accomplish a task</p>
+              </div>
+          </div>
+        </div>
+          <!-- Second Row -->
+          <div class="d-flex flex-wrap justify-content-around ">
+          <div class="how-we-card mb-4 mr-5">
+              <div class="card-body text-center">
+                <img class="card-img-top" src="https://i.ibb.co/89Lnn4S/how-3.png" alt="Communicate Image">
+                  <h2 class="card-title">1. Communicate</h2>
+                  <p class="card-text">Engage in conversation and exchange information</p>
+              </div>
+          </div>
+          <div class="how-we-card mb-4  ml-5">
+              <div class="card-body text-center">
+                <img class="card-img-top" src="https://i.ibb.co/28vsSyP/how-4.png" alt="Allocate Image">
+                  <h2 class="card-title">3. Allocate</h2>
+                  <p class="card-text">Jointly allocate or distribute resources, time, or tasks</p>
+              </div>
+          </div>
+          <img class="how-we-arr-img mr-5" src="https://i.ibb.co/bFpVhmD/how-we-arr2.png">
+          </div>
+      </div>
+  </div>
+  
+  <div class="container container5">
+    <h1 class="text-center">Why Choose Us?</h1>
+    <div class="d-flex flex-column">
+      <div class="d-flex flex-wrap justify-content-around">
+        <div class="why-choose-card">
+          <div class="card-body d-flex flex-column align-items-center">
+          <img class="why-choose-img" src="https://i.ibb.co/HT262tP/why-choose1.png"/>
+          <h5>Confidentiality</h5>
+          <p>We prioritize confidentiality for your security
+            and privacy.</p>
+        </div>
+      </div>
+        <div class="why-choose-card">
+          <div class="card-body d-flex flex-column align-items-center">
+          <img class="why-choose-img" src="https://i.ibb.co/k1gyjVx/why-choose2.png"/>
+          <h5>Prompt</h5>
+          <p>Complete the entire process through quick
+            and efficient responses</p>
+        </div>
+      </div>
+        <div class="why-choose-card">
+          <div class="card-body d-flex flex-column align-items-center">
+          <img class="why-choose-img" src="https://i.ibb.co/gd03qfN/why-choose3.png"/>
+          <h5>Compliance at your Convenience</h5>
+          <p>Hassle-free compliance services. Relax,
+            we ve got you covered.</p>
+        </div>
+        </div>
+        <div class="why-choose-card">
+          <div class="card-body d-flex flex-column align-items-center">
+          <img class="why-choose-img" src="https://i.ibb.co/wYs3L91/why-choose4.png"/>
+          <h5>Mastery and Knowledge</h5>
+          <p>Experienced CA in finance, tax, and
+            auditing</p>
+        </div>
+        </div>
+        <div class="why-choose-card">
+          <div class="card-body d-flex flex-column align-items-center">
+          <img class="why-choose-img" src="https://i.ibb.co/kcsQzxJ/why-choose5.png"/>
+          <h5>Affordable & reliable assistance.</h5>
+          <p>Affordable and reliable assistance for all your
+            financial needs.</p>
+        </div>
+        </div>
+        <div class="why-choose-card">
+          <div class="card-body d-flex flex-column align-items-center">
+          <img class="why-choose-img" src="https://i.ibb.co/jrQLvCD/why-choose6.png"/>
+          <h5>Personalized Solutions</h5>
+          <p>Tailored compliance solutions for your
+            unique needs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container container6">
+    <h1 class="text-center mb-4">
+      Delve into Our Extensive Services
+    </h1>
+    <div class="d-flex flex-row  mb-5 mt-3" >
+      <div class="item mr-4" onclick="expandCards(['card1', 'card2', 'card3', 'card4'],this)">Register Your Business</div>
+      <div class="item mr-4" onclick="expandCard(this)">Get Licenses and Registrations</div>
+      <div class="item mr-4" onclick="expandCard(this)">Protect Your Intellectual Properties</div>
+      <div class="item mr-4" onclick="expandCard(this)">Easy Tax Registration and Filing</div>
+      <div class="item mr-4" onclick="expandCard(this)">Mandatory Compliances</div>
+  </div>
+  <div class="d-flex flex-row">
+  <div class="card extensive-card" id="card1" onclick="highlightCard(this)">
+    <h6 class="text-center" style="color: #ffffff";>Private Limited Company Registration</h6>
+    <h2><span style="font-size: larger; color: #ffffff;">199</span><span style="font-size: 12px;">/Months</span></h2>
+    <hr class="extensive-hr">
+    <p>applicable taxes and Govt. fees extra.</p>
+    <ul >
+      <li >DIN and DSC for two Directors</li>
+      <li>Name Approval Certificate</li>
+      <li>Drafting of MoA & AoA</li>
+      <li>Registration fees and stamp duty</li>
+      <li>Company PAN and TAN</li>
+      <li>& more...</li>
+  </ul>
+  <button class="get-started-button">
+    Get Started
+    <div class="circle">&#62;</div> <!-- Unicode character for ">" -->
+</button>
+  </div>
+
+<div class="card extensive-card" id="card2" onclick="highlightCard(this)">
+    <h6 class="text-center" style="color: #ffffff";>Limited Liability Partnership</h6>
+    <h2><span style="font-size: larger; color: #ffffff;">299</span><span style="font-size: 12px;">/Months</span></h2>
+    <hr class="extensive-hr">
+    <p>applicable taxes and Govt. fees extra.</p>
+    <ul>
+      <li>DSC for one director and DIN for up to three directors</li>
+      <li>Drafting of MoA & AoA</li>
+      <li>Registration fees and stamp duty</li>
+      <li>Company Incorporation Certificate</li>
+      <li>Zero Balance Current Account</li>
+      <li>& more...</li>
+  </ul>
+  <button class="get-started-button">
+    Get Started
+    <div class="circle">&#62;</div> <!-- Unicode character for ">" -->
+</button>
+</div>
+
+<div class="card extensive-card" id="card3" onclick="highlightCard(this)">
+    <h6 class="text-center" style="color: #ffffff";>One Person Company</h6>
+    <h2><span style="font-size: larger; color: #ffffff;">499</span><span style="font-size: 12px;">/Months</span></h2>
+    <hr class="extensive-hr">
+    <p>applicable taxes and Govt. fees extra.</p>
+    <ul>
+      <li>DIN and DSC for the Director</li>
+      <li>Guidance for choosing the company name</li>
+      <li>Name Approval Certificate</li>
+      <li>Drafting of MoA & AoA</li>
+      <li>Company Incorporation Certificate</li>
+      <li>& more...</li>
+  </ul>
+  <button class="get-started-button">
+    Get Started
+    <div class="circle">&#62;</div> <!-- Unicode character for ">" -->
+</button>
+</div>
+
+<div class="card extensive-card" id="card4" onclick="highlightCard(this)">
+    <h6 class="text-center" style="color: #ffffff";>Partnership</h6>
+    <h2><span style="font-size: larger; color: #ffffff;">999</span><span style="font-size: 12px;">/Months</span></h2>
+    <hr class="extensive-hr">
+    <p>applicable taxes and Govt. fees extra.</p>
+    <ul>
+      <li>Guidance on setting up a partnership firm</li>
+      <li>Drafting Partnership Deed</li>
+      <li>Two rounds of iterations</li>
+      <li>& more...</li>
+  </ul>
+  <button class="get-started-button">
+    Get Started
+    <div class="circle">&#62;</div> <!-- Unicode character for ">" -->
+</button>
+</div>
+</div>
+
+
+  </div>
+
+  <div class="container container7">
+    <h2 class="text-center mb-5">Unlocking Customer Delight : Our Secret to Success!</h2>
+    <div id="carouselExample" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+              <div class="row">
+                  <!-- Card 1 -->
+                  <div class="col">   
+                                     
+                    <div class="customer-card">    
+                      <div class="customer-img "> 
+                        <img src="https://i.ibb.co/QQfN8Rz/customer1.png"/>
+                      </div>              
+                      <div class="card-body customer-card-body">       
+                           
+                              <h5 class="card-title">N.Pradeep</h5>
+                              <p class="card-text " style="text-align: left;">Compliance Desk India is a reliable and
+                                professional firm. Their expertise and
+                                personalized approach make them a
+                                trusted partner for streamlining
+                                financial processes and navigating tax
+                                regulations. Highly recommended!
+                                </p>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Card 2 -->
+                  <div class="col">
+                      <div class="customer-card">
+                        <div class="customer-img "> 
+                          <img src="https://i.ibb.co/swS3YMx/customer2.png"/>
+                        </div>
+                          <div class="card-body customer-card-body">
+                            
+                              <h5 class="card-title">S.Mihira</h5>
+                              <p class="card-text" style="text-align: left;">Compliance Desk India is a proactive and
+                                supportive partner for startups. They
+                                provide invaluable assistance with
+                                financial systems, tax compliance, and
+                                optimizing business finances. Skilled,
+                                responsive, and friendly team.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Card 3 -->
+                  <div class="col">
+                      <div class="customer-card">
+                        <div class="customer-img"> 
+                          <img src="https://i.ibb.co/C1DGYrT/customer3.png"/>
+                        </div>
+                          <div class="card-body customer-card-body">
+                            
+                              <h5 class="card-title">S.Goutham</h5>
+                              <p class="card-text" style="text-align: left;">Compliance Desk India is a highly
+                                professional and trustworthy firm. Their
+                                expertise in tax planning, bookkeeping,
+                                and financial forecasting brings peace of
+                                mind. Exceptional service, capable
+                                hands</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+              <div class="row">
+                  <!-- Card 4 -->
+                  <div class="col">
+                      <div class="customer-card">
+                        <div class="customer-img "> 
+                          <img src="https://i.ibb.co/swS3YMx/customer2.png"/>
+                        </div>
+                          <div class="card-body customer-card-body">
+                            
+                              <h5 class="card-title">Pranitha</h5>
+                              <p class="card-text" style="text-align: left;">Compliance Desk India is a reliable and
+                                professional firm. Their expertise and
+                                personalized approach make them a
+                                trusted partner for streamlining
+                                financial processes and navigating tax
+                                regulations. Highly recommended!</p>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Card 5 -->
+                  <div class="col">
+                      <div class="customer-card">
+                        <div class="customer-img"> 
+                          <img src="https://i.ibb.co/QQfN8Rz/customer1.png"/>
+                        </div>
+                          <div class="card-body customer-card-body">
+                            
+                              <h5 class="card-title">Sushanthi</h5>
+                              <p class="card-text" style="text-align: left;">Compliance Desk India is a reliable and
+                                professional firm. Their expertise and
+                                personalized approach make them a
+                                trusted partner for streamlining
+                                financial processes and navigating tax
+                                regulations. Highly recommended!</p>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Card 6 -->
+                  <div class="col">
+                      <div class="customer-card">
+                        <div class="customer-img"> 
+                          <img src="https://i.ibb.co/C1DGYrT/customer3.png"/>
+                        </div>
+                          <div class="card-body customer-card-body">
+                            
+                              <h5 class="card-title">Suhas</h5>
+                              <p class="card-text" style="text-align: left;">Compliance Desk India is a reliable and
+                                professional firm. Their expertise and
+                                personalized approach make them a
+                                trusted partner for streamlining
+                                financial processes and navigating tax
+                                regulations. Highly recommended!</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+      </a>
+  </div>
+  
+  
+  <!-- Bootstrap JS and Popper.js scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+</div>
+
+<div class="container container8">
+  <div class="d-flex">
+    <div class="col-md-4 w-100">
+      <div class="d-flex flex-column">
+      <img src="https://i.ibb.co/WGRmy1k/faq-img.png"/>
+      <h1>Support</h1>
+      <p>Everything you need to know about Us. Can't find the answer you re looking for? Please chat to our friendly team</p>
+    </div>
+    </div>
+    <div class="col-md-8 w-100">
+      <h1>Frequently Asked Questions</h1>
+      <hr class="faq-hr">
+
+      <div class="faq-item">
+        <div class="faq-row ">
+          <h6 class="faq-question">Is there a free trail available?</h6>
+          <button class="faq-toggle-btn" onclick="toggleAnswer(this)">+</button>
+        </div>
+        <p class="faq-answer">Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free,
+          personalized 30-minute call to get you up and running as soon as possible</p>
+      </div>
+      
+      <hr class="faq-hr" >
+
+      <div class="faq-item">
+        <div class="faq-row ">
+      <h6>What is the role of a Charted Accountant (CA)?</h6>
+      <button class="faq-toggle-btn" onclick="toggleAnswer(this)">+</button>
+    </div>
+      <p class="faq-answer">Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free,
+        personalized 30-minute call to get you up and running as soon as possible</p>
+      </div>
+      <hr class="faq-hr" >
+
+      <div class="faq-item">
+        <div class="faq-row">
+      <h6>Why do I need the services of a Charted Accountant?</h6>
+      <button class="faq-toggle-btn" onclick="toggleAnswer(this)">+</button>
+    </div>
+      <p class="faq-answer">Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free,
+        personalized 30-minute call to get you up and running as soon as possible</p>
+      </div>
+
+      <hr class="faq-hr" style="color:#FE3314">
+
+      <div class="faq-item">
+        <div class="faq-row ">
+      <h6>What services does your CA firm offer?</h6>
+      <button class="faq-toggle-btn" onclick="toggleAnswer(this)">+</button>
+    </div>
+      <p class="faq-answer">Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free,
+        personalized 30-minute call to get you up and running as soon as possible</p>
+      </div>
+
+      <hr class="faq-hr" style="color:#FE3314">
+
+      <div class="faq-item">
+        <div class="faq-row ">
+      <h6>How can a CA help in tax optimization?</h6>
+      <button class="faq-toggle-btn" onclick="toggleAnswer(this)">+</button>
+    </div>
+      <p class="faq-answer">Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free,
+        personalized 30-minute call to get you up and running as soon as possible</p>
+      </div>
+       
+      <hr class="faq-hr" style="color:#FE3314">
+
+      <div class="faq-item">
+        <div class="faq-row ">
+      <h6>What industries do you specialize in?</h6>
+      <button class="faq-toggle-btn" onclick="toggleAnswer(this)">+</button>
+        </div>
+      <p class="faq-answer">Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free,
+        personalized 30-minute call to get you up and running as soon as possible</p>
+      </div>
+
+      <hr class="faq-hr" style="color:#FE3314">
+
+
+      <div class="faq-item">
+        <div class="faq-row ">
+      <h6>How do i get started with your CA service?</h6>
+      <button class="faq-toggle-btn" onclick="toggleAnswer(this)">+</button>
+        </div>
+      <p class="faq-answer">Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free,
+        personalized 30-minute call to get you up and running as soon as possible</p>
+    </div>
+
+    <hr class="faq-hr" style="color:#FE3314">
+  </div> 
+
+  </div>
+</div>
+
+
+<div class="container container9">
+    <img class="mt-3 mb-2 ml-3" src="https://i.ibb.co/0jRyTRD/compilance-desk.png"/>
+     <div class="d-flex  flex-column">
+      
+      <div class="d-flex flex-wrap justify-content-around mt-1">
+        <div class="container9-items">
+            <h4>Products</h4>
+            <div class="custom-hr"></div>
+            <ul>
+                <li>Individuals</li>
+                <li>Income Tax Filling</li>
+                <li>ClearGST</li>
+                <li>Enterprises</li>
+            </ul>
+        </div>
+        <div class="container9-items">
+            <h4>Resources & Guides</h4>
+            <div class="custom-hr"></div>
+            <ul>
+                <li>GST Resources</li>
+                <li>ITR Resources</li>
+                <li>Mutual Fund Resources</li>
+                <li>Business Resources</li>
+            </ul>
+        </div>
+        <div class="container9-items">
+            <h4>Tax Registration</h4>
+            <div class="custom-hr"></div>
+            <ul>
+                <li>GST Registration</li>
+                <li>Importer Exporter Code</li>
+                <li>Shop Registration</li>
+                <li>TDS return</li>
+            </ul>
+        </div>
+        <div class="container9-items">
+            <h4>Other Services</h4>
+            <div class="custom-hr"></div>
+            <ul>
+                <li>Trending Mutual Funds</li>
+                <li>Top AMCS</li>
+                <li>Stock Markets</li>
+                <li>Best Funds</li>
+            </ul>
+        </div>
+        </div>
+      <div class="d-flex flex-wrap justify-content-around mt-4">
+        <div class="container9-items">
+            <h4>Tools</h4>
+            <div class="custom-hr"></div>
+            <ul>
+                <li>EMI Calculator</li>
+                <li>Mutual Funds Calculator</li>
+                <li>GST Calculator</li>
+                <li>Home Loan EMI Calculator</li>
+                <li>Currency Converter</li>
+            </ul>
+        </div>
+        <div  class="container9-items">
+            <ul>
+                <li>TDS Calculator</li>
+                <li>HRA Calculator</li>
+                <li>Business Setup Calculator</li>
+                <li>Simple Compound Interest Calculator</li>
+                <li>NPS Calculator</li>
+            </ul>
+        </div>
+        <div  class="container9-items">
+            <ul>
+                <li>EPS Calculator</li>
+                <li>HSN Code Finder</li>
+                <li>Gratuity Calculator</li>
+                <li>PPF Calculator</li>
+                <li>Income Tax Calculator</li>
+            </ul>
+        </div>
+        <div  class="container9-items">
+            <ul>
+                <li>Salary Calculator</li>
+                <li>Retirement Planning Calculator</li>
+                <li>RD Calculator</li>
+                <li>Mutual Fund Calculator</li>
+                <li>SIP Calculator</li>
+            </ul>
+        </div>
+    </div>
+    
+     </div>
+     <hr>
+     <div class="d-flex align-items-center ml-5">
+     <div class="d-flex flex-wrap justify-content-around mt-4">
+       <p class="mr-5 clickable" onclick="changeColor(this)">Terms & Conditions</p>
+       <p class="mr-5 clickable" onclick="changeColor(this)">Privacy Policy</p>
+       <p class="mr-5 clickable" onclick="changeColor(this)">Cookies</p>
+        <p class="mr-5 clickable" onclick="changeColor(this)">Refunds</p>
+        <p class="mr-5 clickable" onclick="changeColor(this)">License</p>
+     </div>
+     <div class="d-flex flex-wrap justify-content-around mt-4 ml-auto social-media-icons">
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-3 clickable" onclick="changeColor(this)" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-3 clickable" onclick="changeColor(this)" width="30" height="30" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-3 clickable" onclick="changeColor(this)" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="clickable" onclick="changeColor(this)" width="30" height="30" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+      </svg>
+     </div>
+    </div>
+  </div>
+
+</body>
+</html>
