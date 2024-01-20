@@ -13,6 +13,6 @@ Features:
 
 Check it out live: https://thanusreeramapatruni45.on.drv.tw/www.compliance-project.com/
 
-**Get Started:**
-1. Clone the repo: `git clone https://github.com/thanusree45/compliance-project.git`
+Get Started:
+1. Clone the repo: https://github.com/thanusree45/compliance-project.git
 2. Open `index.html` in your browser or set up a local server.
