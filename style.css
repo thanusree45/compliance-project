@@ -473,41 +473,99 @@
     transform: scale(1.2);
 }
 
-.container7 {
-    position: relative;
-    margin-top: 200px;
-    height: auto;
-    min-width: 768px;
-}
-
 .container7-heading {
     text-align: center;
     font-size: 32px;
+    font-family: "Roboto";
 }
-
-.customer-img {
-    position: absolute;
-    border-radius: 70px;
-    margin-left: 35%;
-    top: 5%;
-}
-
-.customer-card {
-    margin-top: 20%;
-    border-radius: 20px;
-    height: 401%;
-}
-
-.customer-card-body {
-    background-color: #F5F2F2;
-    text-align: center;
-    padding-bottom: 20%;
-    padding-top: 20%;
-    padding-right: 15%;
-    padding-left: 15%;
-    height: 150%;
-}
-
+.carousel-container {
+        width:100%;
+        position:relative;
+      }
+      .carousel-wrapper {
+        display: flex;
+        margin:3rem;
+        transition: transform 0.5s ease-in-out;
+      }
+  
+      .cardss{
+        flex: 0 0 300px;    
+        border:0px;
+        margin: 0 15px;
+        background-color:rgb(236, 224, 219);
+        border-radius: 8px;
+        position:relative;
+      }
+  
+      .cardss img {
+        width:70px;
+        height:70px;  
+        position: absolute;
+        border-radius: 8rem;
+        top:-35px;
+        left:38%;
+      }
+  
+      .card-content {
+        padding: 15px;
+        
+      }
+      .card-content h3{
+        margin:2rem;
+         font-family: "Roboto";
+      }
+      .card-content p{
+        text-align: left ;
+        font-size:12px;
+        color: #333;
+        margin-top:2rem;
+        margin-bottom:2rem;
+        font-family: "Roboto";
+      }
+  
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top:60px;
+        width:auto;
+        margin-top: -25px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 5px;
+        background-color: transparent;
+        user-select: none;
+      }
+      .prev {
+        left: 10px;
+      }
+  
+      .next {
+        right: 10px;
+      }
+      .carousel-container {
+        width: 100%;
+        position: relative;
+        overflow: hidden; /* Ensure overflow is hidden to show only 3 cards at a time */
+      }
+  
+      .carousel-wrapper {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+      .cardss {
+        /* Updated card style with fixed width and margin */
+        flex: 0 0 calc(33.333% - 30px);
+        margin: 0 15px;
+        /* ... other styles ... */
+      }
+  
+      .prev, .next {
+        /* ... other styles ... */
+        top: 50%; /* Center the buttons vertically */
+        transform: translateY(-50%); /* Adjust for vertical centering */
+      }
 .container8 {
     display: flex;
     margin-top: 200px;
