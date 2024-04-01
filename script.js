@@ -115,6 +115,47 @@ function expandCard(cardId, clickedItem) {
 }
 
 
+let currentIndex = 0;
+const itemsPerSlide = 1;
+
+function prevCard() {
+  currentIndex = Math.max(currentIndex - itemsPerSlide, 0);
+  updateCarousel();
+}
+
+function nextCard() {
+  const totalItems = document.querySelectorAll('.carousel-wrapper .cardss').length;
+  currentIndex = Math.min(currentIndex + itemsPerSlide, totalItems - itemsPerSlide);
+  updateCarousel();
+}
+
+function updateCarousel() {
+  const translateValue = -currentIndex * (300 + 15); // Adjust based on your card width and margin
+  document.getElementById('cardCarousel').style.transform = `translateX(${translateValue}px)`;
+}
+const cardsContainer = document.querySelector('.cards-container');
+const dots = document.querySelectorAll('.dot');
+let currenTIndex = 0;
+
+dots.forEach((dot, index) => {
+  dot.addEventListener('click', () => {
+    showCard(index);
+  });
+});
+
+function showCard(index) {
+  document.querySelectorAll('.about-card').forEach((card, i) => {
+    card.style.display = i === index ? 'block' : 'none';
+  });
+
+  dots.forEach((dot, i) => {
+    dot.classList.toggle('active', i === index);
+  });
+
+  currenTIndex = index;
+}
+
+
 function toggleAnswer(button) {
     console.log('toggleAnswer function called');
     // Get the parent container of the FAQ item
