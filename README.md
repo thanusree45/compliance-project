@@ -12,12 +12,7 @@ Features:
 - Bootstrap Components
 
 Check it out live:
-                    https://660ac0bd1ddf016ca9c4b8da--sunny-platypus-cd6c81.netlify.app/
-
                     
-                     https://thanusreeramapatruni45.on.drv.tw/www.compliance-project.com/
-
-                     
                     https://66091b4d0a8a0288eecbf1ff--glittery-lamington-d55a19.netlify.app/
 
 Get Started:
